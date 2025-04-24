@@ -4,3 +4,16 @@ plugins:
 - jekyll-remote-theme
 minima:
   skin: dark
+  social_links:
+    - title: BlueSky
+      icon: bluesky
+      url: "https://bsky.app/profile/jonathanburgess.dev"
+    - title: GitHub
+      icon: github
+      url: "https://github.jonathanburgess.dev"
+    - title: LinkedIn
+      icon: linkedin
+      url: "https://linkedin.jonathanburgess.dev"
+author:
+  name: Jonathan Burgess
+  email: "mail@jonathanburgess.dev"
