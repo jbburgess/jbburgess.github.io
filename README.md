@@ -1,2 +1,15 @@
-# jbburgess.github.io
-GitHub Pages site for this account
+# Jonathan Burgess
+
+Nothing to see here. Check these out instead:
+
+> **LinkedIn**
+
+`linkedin.jonathanburgess.dev`
+
+> **GitHub**
+
+`github.jonathanburgess.dev`
+
+> **Contact Me**
+
+`mail@jonathanburgess.dev`
