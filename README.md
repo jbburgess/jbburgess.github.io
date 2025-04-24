@@ -1,13 +1,13 @@
 Nothing to see here.
 
-> **LinkedIn**
+> **Contact Me**
 
-[`linkedin.jonathanburgess.dev`](https://linkedin.jonathanburgess.dev)
+[`mail@jonathanburgess.dev`](mailto:mail@jonathanburgess.dev)
 
 > **GitHub**
 
 [`github.jonathanburgess.dev`](https://github.jonathanburgess.dev)
 
-> **Contact Me**
+> **LinkedIn**
 
-[`mail@jonathanburgess.dev`](mailto:mail@jonathanburgess.dev)
+[`linkedin.jonathanburgess.dev`](https://linkedin.jonathanburgess.dev)
