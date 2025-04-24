@@ -1,4 +1,6 @@
+title: Jonathan Burgess
 remote_theme: jekyll/minima
+minima:
+  skin: auto
 plugins:
 - jekyll-remote-theme
-title: Jonathan Burgess
