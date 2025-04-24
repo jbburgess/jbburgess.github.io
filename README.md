@@ -1,5 +1,3 @@
-# Jonathan Burgess
-
 Nothing to see here. Check these out instead:
 
 > **LinkedIn**
