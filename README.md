@@ -1,4 +1,4 @@
-Nothing to see here. Check these out instead:
+Nothing to see here.
 
 > **LinkedIn**
 
