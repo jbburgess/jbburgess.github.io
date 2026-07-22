@@ -9,7 +9,7 @@ Hi! I'm a developer with a range of full-stack experience and a long professiona
 
 ## Contact
 
-> **LinkedIn**
+> **Contact Me**
 
 [`linkedin.jonathanburgess.dev`](https://linkedin.jonathanburgess.dev)
 
