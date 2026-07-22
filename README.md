@@ -1,13 +1,22 @@
-Nothing to see here.
+## About Me
 
-> **Contact Me**
+Hi! I'm a developer with a range of full-stack experience and a long professional work history in infrastructure, cloud, platform, DevOps, software, and AI engineering. I enjoy tinkering, building, and automating things. Most of my work is proprietary and not publicly available, but here are a some personal projects I can share:
 
-[`mail@jonathanburgess.dev`](mailto:mail@jonathanburgess.dev)
+## Projects
+
+- [`SJEarthquakesBot`](/sjearthquakesbot/) (Reddit "Devvit" bot)
+- [`TweetSkyBridge`](/tweetskybridge/) (built to power [sjearthquakesbot.bsky.social](https://bsky.app/profile/sjearthquakesbot.bsky.social))
+
+## Contact
+
+> **LinkedIn**
+
+[`linkedin.jonathanburgess.dev`](https://linkedin.jonathanburgess.dev)
 
 > **GitHub**
 
 [`github.jonathanburgess.dev`](https://github.jonathanburgess.dev)
 
-> **LinkedIn**
+> **Email**
 
-[`linkedin.jonathanburgess.dev`](https://linkedin.jonathanburgess.dev)
+[`mail@jonathanburgess.dev`](mailto:mail@jonathanburgess.dev)

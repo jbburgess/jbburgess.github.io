@@ -2,6 +2,7 @@ title: Jonathan Burgess
 remote_theme: jekyll/minima
 plugins:
 - jekyll-remote-theme
+- jekyll-redirect-from
 minima:
 minima:
   hide_site_feed_link: true
