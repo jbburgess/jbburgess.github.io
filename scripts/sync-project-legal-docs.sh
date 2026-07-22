@@ -20,23 +20,6 @@ require_env SOURCE_REPOS
 require_env SOURCE_BRANCH
 require_env SOURCE_BASE
 
-normalize_source_base() {
-  local raw="$1"
-  local val
-  val="$(trim "$raw")"
-
-  # Accept accidental markdown-link formatting, e.g. [text](https://raw.githubusercontent.com/)
-  if [[ "$val" =~ ^\[[^]]+\]\((https?://[^)]+)\)$ ]]; then
-    val="${BASH_REMATCH[1]}"
-  fi
-
-  # Keep a stable URL shape for concatenation.
-  val="${val%/}"
-  printf '%s' "$val"
-}
-
-SOURCE_BASE="$(normalize_source_base "$SOURCE_BASE")"
-
 TMP_DIR=".tmp-legal-sync"
 mkdir -p "${TMP_DIR}"
 
