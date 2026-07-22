@@ -8,16 +8,14 @@
     {% include custom-head.html %}
   </head>
   <body>
-    <header class="site-header" role="banner">
-      <div class="wrapper">
-        <a class="site-title" rel="author" href="{{ '/' | relative_url }}">{{ page.title | default: site.title | escape }}</a>
-      </div>
-    </header>
+    {% include header.html %}
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
         {{ content }}
       </div>
     </main>
+
+    {% include footer.html %}
   </body>
 </html>
