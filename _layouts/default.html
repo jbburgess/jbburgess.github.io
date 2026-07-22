@@ -8,8 +8,16 @@
     {% include custom-head.html %}
   </head>
   <body>
-    <main class="container-lg px-3 my-5 markdown-body">
-      {{ content }}
+    <header class="site-header" role="banner">
+      <div class="wrapper">
+        <a class="site-title" rel="author" href="{{ '/' | relative_url }}">{{ page.title | default: site.title | escape }}</a>
+      </div>
+    </header>
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
     </main>
   </body>
 </html>
