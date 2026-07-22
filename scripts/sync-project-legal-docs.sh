@@ -20,6 +20,23 @@ require_env SOURCE_REPOS
 require_env SOURCE_BRANCH
 require_env SOURCE_BASE
 
+normalize_source_base() {
+  local raw="$1"
+  local val
+  val="$(trim "$raw")"
+
+  # Accept accidental markdown-link formatting, e.g. [text](https://raw.githubusercontent.com/)
+  if [[ "$val" =~ ^\[[^]]+\]\((https?://[^)]+)\)$ ]]; then
+    val="${BASH_REMATCH[1]}"
+  fi
+
+  # Keep a stable URL shape for concatenation.
+  val="${val%/}"
+  printf '%s' "$val"
+}
+
+SOURCE_BASE="$(normalize_source_base "$SOURCE_BASE")"
+
 TMP_DIR=".tmp-legal-sync"
 mkdir -p "${TMP_DIR}"
 
@@ -48,9 +65,12 @@ fetch_doc() {
   local body_file="${TMP_DIR}/${out_dir}-${source_name}.body"
   local out_file="${out_dir}/${out_name}"
 
+  echo "Syncing ${source_repo}/docs/${source_name} -> ${out_file}"
   curl -fsSL "${source_docs_base}/${source_name}" -o "${source_file}"
 
-  # Drop any leading front matter from source docs, then remove the first H1.
+  # Source repos are treated as content-only sources for these legal docs. We
+  # intentionally replace upstream front matter with this site's canonical
+  # layout/title/permalink values while keeping the markdown body in sync.
   awk 'BEGIN{in_fm=0;done=0} NR==1 && $0=="---" {in_fm=1;next} in_fm && $0=="---" {in_fm=0;done=1;next} !in_fm && done {print} !in_fm && !done {print}' "${source_file}" \
     | awk 'BEGIN{removed=0} !removed && $0 ~ /^# / {removed=1; next} {print}' \
     > "${body_file}"

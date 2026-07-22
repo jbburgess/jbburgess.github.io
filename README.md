@@ -1,5 +1,3 @@
-## About Me
-
 Hi! I'm a developer with a range of full-stack experience and a long professional work history in infrastructure, cloud, platform, DevOps, software, and AI engineering. I enjoy tinkering, building, and automating things. Most of my work is proprietary and not publicly available, but here are a some personal projects I can share:
 
 ## Projects
@@ -9,7 +7,7 @@ Hi! I'm a developer with a range of full-stack experience and a long professiona
 
 ## Contact
 
-> **Contact Me**
+> **LinkedIn**
 
 [`linkedin.jonathanburgess.dev`](https://linkedin.jonathanburgess.dev)
 

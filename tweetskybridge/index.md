@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Twitter to Bluesky Repost Bot
+title: TweetSkyBridge
 permalink: /tweetskybridge/
 ---
 
