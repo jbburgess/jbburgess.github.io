@@ -1,0 +1,10 @@
+<header class="site-header" role="banner">
+  <div class="wrapper">
+    {% if page.url == '/' %}
+      {% assign header_title = site.title %}
+    {% else %}
+      {% assign header_title = page.title | default: site.title %}
+    {% endif %}
+    <a class="site-title" rel="author" href="{{ '/' | relative_url }}">{{ header_title | escape }}</a>
+  </div>
+</header>
